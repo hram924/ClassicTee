@@ -1,0 +1,84 @@
+<html>
+
+<head>
+
+<title>Classic Tee</title>
+<link href="css/Styles.css" rel="stylesheet" type="text/css">
+<script src="jquery-3.5.1.js"></script>
+<script src="script.js"></script>
+ 
+</head>
+
+<body>
+<!--Header banner with the my card button on the right -->
+<header>
+  <p class = "popBut">My Cart ( 4 )</p>
+  <div class="popup">
+		<div>
+			<img src="images/classic-tee.jpg" width = "70px" height = "100px" style="float:left"/>
+		</div>
+		<!--pop up sized so the text is right and image is left -->
+		<div style="float:left; padding-left: 5%;">
+			<p>Classic Tee</p>
+			<p>1 x $75.00</p>
+			<p>Size: S</p>
+		</div>
+		<br>
+		<br>
+		<div>
+			<img src="images/classic-tee.jpg" width = "70px" height = "100px" style="float:left"/>
+		</div>
+		
+		<div style="float:left; padding-left: 5%;">
+			<p>Classic Tee</p>
+			<p>3 x $75.00</p>
+			<p>Size: L</p>
+		</div>
+  </div>
+</header>
+<!--image displayed on the left -->
+<div class = "picture">
+<img src="images/classic-tee.jpg" width = "400px" height = "600px" style="float:right"/>
+</div>
+
+<!--information on the right -->
+<div class = "information">
+<p style="color: #222222; font-size:22px">Classic Tee</p>
+<div class="popup" id="pop" style="display: none">
+
+</div>
+<strong style="color: #222222" >$75.00</strong>
+<br><br>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras mattis vestibulum justo, 
+eu pulvinar massa malesuada at. Cras est odio, posuere quis magna quis, rutrum tempor ante. 
+Phasellus ac ante at mauris egestas venenatis quis mattis massa. Aliquam erat volutpat. 
+Vivamus ac elementum justo, eget iaculis ex.</p>
+
+<br>
+<b style="font-size:11px">SIZE<span class="required">*</span> <span id="selectedVal"></span></b>
+<br>
+<br>
+
+<!--button group to select size -->
+
+<div id="aBtnGroup" class="btn-group">
+	<button type = "button" class = "butt" value="S">S</button>
+	<button type = "button" class = "butt" value="M">M</button>
+	<button type = "button" class = "butt" value="L">L</button>
+</div>
+
+
+<br>
+
+<!--add to cart button -->
+
+<button class = "cart" id = "cart">ADD TO CART</button>
+
+<p id="err" style="color: #C90000; display:None;">Please Select a Size</p>
+
+</div>
+
+</body>
+
+</html>
