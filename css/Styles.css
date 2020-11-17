@@ -1,0 +1,111 @@
+body{
+	color: #888888;
+	font-family: "Arial";
+	font-size: 14px;
+}
+header {
+  background-color: #F6F6F7;
+  text-align: right;
+  width: 100%;
+  padding: 1px;
+  font-size: 12px;
+}
+p{
+	line-height: 1.5;
+}
+.popup {
+  background-color: #ffffff;
+  width: 200px;
+  height: 100px;
+  position: absolute;
+  right: 10px;
+  display: none;
+}
+.popBut:hover + .popup {
+/*Displays popup on hover*/
+  display: block;
+  background-color: #ffffff;
+  top: 20px;
+  width: 200px;
+  height: 100px;
+  position: absolute;
+  right: 10px;
+  
+}
+.picture{
+	padding-top: 34px;
+	float: left;
+	width: 45%;
+}
+.information{
+	padding-top: 10px;
+	padding-left: 5%;
+	float: left;
+	width: 35%;
+	text-align: left;
+}
+@media screen and (max-width: 481 px){
+	#picture, #information{
+		float: left;
+		padding: 0;
+	}
+}	  
+.required{
+	color: #C90000;
+}
+
+strong {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.butt {
+   border-style: ridge;
+   height:40px;
+   color: #888888;
+   width:40px;
+   background-color: white;
+}
+.popBut {
+   background: none!important;
+   border: none;
+   color: #222222;
+   border-style: None;
+   padding-right: 10%;
+   width: 100px;
+   font-size: 12px;
+   float: right;
+   }
+
+.butt:hover {
+   border-color: #222222;
+   border-style: solid;
+   background-color: white;
+}
+
+.butt:active {
+   border-style: solid;
+   border-color: #222222;
+   background-color: white;
+}
+.cart {
+   border-style: ridge;
+   height:40px;
+   color: #888888;
+   width:150px;
+   border-color: #888888;
+   font-style: strong;
+   background-color: white;
+}
+
+.cart:hover {
+   border-color: #222222;
+   border-style: solid;
+   color: white;
+   background-color: black;
+}
+
+.cart:active {
+   border-style: solid;
+   border-color: #222222;
+   background-color: white;
+}
